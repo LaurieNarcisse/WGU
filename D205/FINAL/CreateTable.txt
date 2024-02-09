@@ -1,0 +1,18 @@
+CREATE TABLE public. mservices
+( 
+	patient_id text, 
+	services text, 
+	overweight text, 
+	"Arthritis" text, 
+	"Diabetes" text,
+	"Hyperlipidemia" text, 
+	"BackPain" text, 
+	"Anxiety" text, 
+	"Allergic_rhinitis" text,
+	"Reflux_esophagitis" text, 
+	"Asthma" text, 
+	PRIMARY KEY (patient_id)
+);
+
+ALTER TABLE public.mservices
+	OWNER to postgres;

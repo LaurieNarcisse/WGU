@@ -1,0 +1,18 @@
+CREATE TABLE public.mservices
+(
+    patient_id character varying(50) NOT NULL,
+    services character varying(100),
+    overweight character varying(10),
+    "arthritis" character varying(10),
+    "Diabetes" character varying(10),
+    "Hyperlipidemia" character varying(10),
+    "BackPain" character varying(10),
+    "Anxiety" character varying(10),
+    "Allergic_rhinitis" character varying(15),
+    "Reflux_esophagitis" character varying(15),
+    "Asthma" character varying(10),
+   Constraint mservices_pky PRIMARY KEY (patient_id)
+);
+
+ALTER TABLE public.mservices
+	OWNER to postgres;

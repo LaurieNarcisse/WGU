@@ -1,0 +1,7 @@
+select pat.patient_id, pat.age, pat.stroke, pat.hignblood, ms.arthritis
+from patient pat
+left join public.mservices ms on pat.patient_id = ms.patient_id
+where ms.arthritis like 'Yes%'
+and pat.age>40
+and pat.stroke like 'Yes%'
+and pat.hignblood like 'Yes%'; 

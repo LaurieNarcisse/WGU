@@ -1,0 +1,6 @@
+Copy public.mservices (
+	patient_id, services, overweight, "arthritis", "Diabetes",
+					 "Hyperlipidemia", "BackPain", "Anxiety", 
+"Allergic_rhinitis", "Reflux_esophagitis", "Asthma")
+
+from 'C:\LabFiles\Medical\mservices.csv' CSV HEADER;

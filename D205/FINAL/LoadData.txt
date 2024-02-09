@@ -1,0 +1,3 @@
+select pat.patient_id, pat.age, pat.stroke, pat.hignblood, ms.arthritis
+from patient pat
+left join public.mservices ms on pat.patient_id = ms.patient_id
